@@ -1,0 +1,15 @@
+@import url("https://unpkg.com/xp.css");
+
+.window-body {
+    font-family: 'Lucida Sans Unicode';
+}
+
+.window-body h2 {
+    margin:0;
+    font-size:20px !important;
+}
+
+.window-body p {
+    margin:0;
+    font-size:14px;
+}

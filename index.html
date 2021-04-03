@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RetroKeygen | Generate keys for old software right in your browser</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="window" style="max-width:750px;">
+            <div class="title-bar">
+                <div class="title-bar-text">RetroKeygen</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <h2>Welcome to RetroKeygen</h2>
+                <p>RetroKeygen is a website to generate license keys for software that is no longer in production.</p>
+                <p>This website is mainly to allow older software to still be used, while activation servers are dead or license keys are no longer being sold.</p>
+                <noscript><i>This app requires Javascript, as the key is generated client-side.</i></noscript>
+                <div id="s" style="display:none;">
+                    <select id="product">
+                        <option value="95cd">Windows 95 (10-digit CD Key) [XXX-XXXXXXX]</option>
+                        <option value="95oem">Windows 95 OEM [XXXXX-OEM-XXXXXXX-XXXXX]</option>
+                    </select>
+                    <button onclick="gen(document.getElementById('product').value);">Generate</button><br>
+                    <span id="result">[Result is going to be here]</span>
+                </div>
+                <script>document.getElementById("s").style.display="";</script>
+            </div>
+        </div>
+        <script src="gen.js"></script>
+    </body>
+</html>
